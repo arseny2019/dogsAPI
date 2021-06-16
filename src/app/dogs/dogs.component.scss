@@ -1,0 +1,19 @@
+.container {
+  max-width: 1280px;
+  padding: 120px 64px 0;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.select {
+  min-width: 480px;
+}
+
+.dog-img {
+  object-fit: contain;
+  object-position: center;
+}

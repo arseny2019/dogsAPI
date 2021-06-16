@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <mat-form-field appearance="fill" class="select">
+      <mat-label>Выберите породу</mat-label>
+      <mat-select [(value)]="activeBreed" (valueChange)="breedChange($event)">
+        <mat-option *ngFor="let breed of breeds?.breeds" [value]="breed">
+          {{breed}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <img src="{{src}}" width="600px" height="600px" alt="Собака" class="dog-img">
+  </div>
+</div>
+
